@@ -1,0 +1,16 @@
+ li {
+ 	font-weight: bold;
+ }
+ ul > li{
+ 	color: blue;
+
+ }
+ ol > li {/*diect child*/
+ 	color: pink;
+ }
+ ul ul{/*descendant*/
+ 	font-size: 40px;
+ }
+ ul li li{
+ 	font-style: italic;
+ }

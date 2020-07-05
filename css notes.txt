@@ -1,0 +1,18 @@
+id > class > element > *
+*-applies to all and overridden by div or p
+div,p- appliezs to the type of element and overridden by class
+.abc-applies to class abc and overridden by id
+#xyz-applies to id xyz
+In css the tag which is return after a same tag then it will override the before wala
+when you add any style to any element direct from html file then it is called inline style,for reference see div 4 in cssinheritance.html file.
+inline style can override anything and everything.
+
+for list file in css 
+try 
+ul ul{
+display:none;
+}
+li:hover > ul{
+display:block;
+}
+(for understanding between child and descendant)

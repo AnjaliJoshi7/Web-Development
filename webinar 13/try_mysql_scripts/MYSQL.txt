@@ -1,0 +1,69 @@
+on shell // on  terminal
+ mysql -u root -p
+ enter password:
+
+  mysql>
+  ..
+
+  ## create DB , User, Grant Access.
+
+  ..sql // inside mysql
+  CREATE DATABASE mytestdb;
+
+  CREATE USER myuser identified by 'mypass';
+  //create a user with that particular password;
+
+  use mytestdb;
+
+  GRANT ALL PRIVILEDGES ON mytestdb.* to myuser;
+
+flush PRIVILEDGES
+
+exit
+
+## login using the new user
+
+ .. shell
+
+ my sql -u myuser -p
+ Enter Password: (enter "mypass" here)
+
+ ..mysql
+  show databases;
+
+  exit
+  mysql -u myuser -p
+  Enter password: *mypass*
+
+   show databases;
+
+    use mytestdb;
+   create table test1 (id INTEGER PRIMARY KEY, data VARCHAR(40));
+   
+   show tables;
+
+   select * from test1;
+
+   insert into test1 values (1, 'aa');
+
+   select * from test1;
+
+   insert into test1 values (1, 'aa');
+
+   select * from test1;
+
+   create table test1(id INTEGER PRIMARY KEY AUTO_INCREMENT, data VARCHAR(40));
+
+   insert into test1 (data) values ('aaa');
+
+   insert into test1 (data) values ('bbb');
+   
+   select * from test1;
+
+    insert into test1 (id, data) values ( 10,'bbb');
+ 
+     insert into test1 (data) values ('ccc');
+ 
+      insert into test1 (id, data) values ( 33,'qwafcbbb');
+ 
+     insert into test1 (data) values ('ggscc');
